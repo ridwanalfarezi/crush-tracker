@@ -69,12 +69,21 @@ function CrushSection() {
 
 export default function HomePage() {
   return (
-    <div className="container">
-      <div className="header">
-        <h1>Crush Tracker</h1>
-        <p>Keep track of your crushes, friends, and exes</p>
+    <>
+      <head>
+        <title>Crush Tracker</title>
+        <meta
+          name="description"
+          content="Keep track of your crushes, friends, and exes"
+        />
+      </head>
+      <div className="container">
+        <div className="header">
+          <h1>Crush Tracker</h1>
+          <p>Keep track of your crushes, friends, and exes</p>
+        </div>
+        <CrushSection />
       </div>
-      <CrushSection />
-    </div>
+    </>
   );
 }
